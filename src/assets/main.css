@@ -1,6 +1,20 @@
 /* @import './base.css */
 /* example line for importing additional css from another file in the same directory */
 
+
+/* you could either do `html` here or `body` and either kind of just does that you know */
+body {
+    /*
+        but since we are doing body here,
+        this makes the margin of everything 0,
+        removing ugly space between the first div and the edge of the website
+        i guess body has its own margins?
+        until now...
+    */
+    margin: 0;
+    background-color: #efefef;
+}
+
 /* customize `#app` header (remember <div id="app"> */
 #app {
     /*
@@ -20,7 +34,7 @@
         and then auto centralizes it in its space
         example `margin: 10px auto` 10 px around it blank space, auto placing it in the centre
     */
-    margin: 0px;
+    margin: 0;
     
     /*
         borders operate on the inside of the div
