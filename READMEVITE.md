@@ -1,5 +1,4 @@
 # gh-pages
-<<<<<<< HEAD
 
 This template should help get you started developing with Vue 3 in Vite.
 
@@ -28,6 +27,3 @@ npm run dev
 ```sh
 npm run build
 ```
-=======
-setting up github pages for a website/portfolio
->>>>>>> 8dee4912320ab499cce20bf75b89ada33d0c07b3

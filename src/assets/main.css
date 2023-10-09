@@ -1,35 +1,51 @@
-@import './base.css';
+/* @import './base.css */
+/* example line for importing additional css from another file in the same directory */
 
+/* customize `#app` header (remember <div id="app"> */
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+    /*
+        max-width: defines the maximum width of the div
+        we could also choose to define this with %'s
+        the original was 1280px;
 
-  font-weight: normal;
-}
+        there's a difference between max-width and width sometimes...
+    */
+    width: 1000px;
+    height: 500px;
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-}
+    /*
+        margin makes a barrier between it and other divs in its path
+        so its not like really affecting its inner content, just its position in relation to the things around it
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
+        and then auto centralizes it in its space
+        example `margin: 10px auto` 10 px around it blank space, auto placing it in the centre
+    */
+    margin: 0px;
+    
+    /*
+        borders operate on the inside of the div
+        so it squishes things inside of it
+        prettily i might add
+    */
+    border: 10px solid #aaaaaa;
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+    /* font-size has to do with desired glyph HEIGHT */
+    font-size: 24px;
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+    /*
+        now what is this padding "thickness of the padding area"
+        PADDING IS FATNESS
+        why would i want that again?
+
+        rem: "root em" which represents the font size of the root element
+
+        vs em: which is relative to the font-size of its OWN element
+    */
+    padding: 1rem;
+
+    /*
+        background-color define the specific background
+    */
+    background-color: #cccccc;
+    font-weight: normal;
 }

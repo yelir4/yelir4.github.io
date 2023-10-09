@@ -1,3 +1,9 @@
+<!--
+  index.html of our app
+  calls the original parts of our app
+
+  <!DOCTYPE html>   declares this document as an html5 type file
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,7 +13,21 @@
     <title>Vite App</title>
   </head>
   <body>
+    <!--
+      within the body is the div with id="app"
+      everything is rendered within this div
+
+      note that we cannot have multiple `divs` or anything with the same `id`
+      so there is only one id="app"
+    -->
+    <!-- holy moly -->
     <div id="app"></div>
+
+
+    <!--
+      call for `main.js` here which in turn calls for `App.vue`
+      type="module" instead of ="text/javascript" for a reason im sure i someday will understand  
+    -->
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
