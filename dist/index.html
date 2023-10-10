@@ -1,0 +1,35 @@
+<!--
+  index.html of our app
+  calls the original parts of our app
+
+  <!DOCTYPE html>   declares this document as an html5 type file
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/gh-pages/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite App</title>
+    <script type="module" crossorigin src="/gh-pages/assets/index-2e1349de.js"></script>
+    <link rel="stylesheet" href="/gh-pages/assets/index-8cb99c92.css">
+  </head>
+  <body>
+    <!--
+      within the body is the div with id="app"
+      everything is rendered within this div
+
+      note that we cannot have multiple `divs` or anything with the same `id`
+      so there is only one id="app"
+    -->
+    <!-- holy moly -->
+    <div id="app"></div>
+
+
+    <!--
+      call for `main.js` here which in turn calls for `App.vue`
+      type="module" instead of ="text/javascript" for a reason im sure i someday will understand  
+    -->
+    
+  </body>
+</html>
