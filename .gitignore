@@ -9,6 +9,10 @@ lerna-debug.log*
 
 node_modules
 .DS_Store
+# look how its ignoring our dist folder - this allows us to push the dist folder onto a separate subtree
+# building: git add dist -f
+# git commit -m "__"
+# git subtree push --prefix dist origin gh-pages
 dist
 dist-ssr
 coverage
