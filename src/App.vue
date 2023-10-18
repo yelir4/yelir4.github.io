@@ -14,13 +14,19 @@
   essentially, everything here goes into `id="app"` in the index.html
 -->
 <template>
+  riley guioguio
   <header>
-    <!-- <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" /> -->
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it! hi yelir" />
-    </div>
+    <div class="fifths">heyo</div>
+    <div class="fifths">ayy boom boom boom</div>
+    <div class="fifths">heyo</div>
+    <div class="fifths">heyo</div>
+    <div class="fifths">heyo</div><br>
   </header>
+  <!-- <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" /> -->
+  <p>work in progress</p>
+  <div class="wrapper">
+    <HelloWorld msg="You did it! hi yelir" />
+  </div>
 
   <main>
     <TheWelcome />
@@ -33,7 +39,11 @@
 -->
 <style scoped>
 header {
-  line-height: 1.5;
+  line-height: 1;
+
+  /* justify the divs INSIDE the header from here */
+  justify-content: center;
+  display: flex;
 }
 
 .logo {

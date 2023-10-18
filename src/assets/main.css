@@ -1,4 +1,4 @@
-/* @import './base.css */
+/* @import './base.css' */
 /* example line for importing additional css from another file in the same directory */
 
 
@@ -13,28 +13,35 @@ body {
     */
     margin: 0;
     background-color: #efefef;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 /* customize `#app` header (remember <div id="app"> */
 #app {
     /*
-        max-width: defines the maximum width of the div
-        we could also choose to define this with %'s
+        max-width: defines the `div` maximum width
+        defined with px or %
         the original was 1280px;
 
-        there's a difference between max-width and width sometimes...
+        but for here auto seems to work best
     */
-    width: 1000px;
+    width: auto;
     height: 500px;
 
     /*
-        margin makes a barrier between it and other divs in its path
+        not sure what this one does yet
+    */
+    /* position: relative; */
+
+
+    /*
+        margin makes a barrier between this div and adjacent divs
         so its not like really affecting its inner content, just its position in relation to the things around it
 
         and then auto centralizes it in its space
         example `margin: 10px auto` 10 px around it blank space, auto placing it in the centre
     */
-    margin: 0;
+    /* margin: 0; */
     
     /*
         borders operate on the inside of the div
@@ -47,19 +54,33 @@ body {
     font-size: 24px;
 
     /*
-        now what is this padding "thickness of the padding area"
-        PADDING IS FATNESS
-        why would i want that again?
+        "thickness of the padding area"
+        PADDING IS FATNESS, on the outside
 
         rem: "root em" which represents the font size of the root element
-
         vs em: which is relative to the font-size of its OWN element
     */
-    padding: 1rem;
+    padding: 0;
 
     /*
-        background-color define the specific background
+        `background-color` define background color
     */
     background-color: #cccccc;
     font-weight: normal;
+}
+
+/* for the header */
+.fifths
+{
+    width: 15%;
+    height: 100%;
+    /* position: relative; */
+    background-color: #7fcbcb;
+    text-align: center;
+
+    border: 4px solid #6ebacb;
+
+    /* dont allow wrapping, hide overflow (it doesnt even overlap the border) */
+    white-space: nowrap;
+    /* overflow: hidden; */
 }
