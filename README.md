@@ -1,27 +1,27 @@
-# React + TypeScript + Vite
+# yelir4.github.io (gh-pages)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+setting up github pages to host website/portfolio
 
-Currently, two official plugins are available:
+this website makes use of html, css, javascript (typescript) and the react.js library.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+built with react.js + vite
 
-## Expanding the ESLint configuration
+# what is going on in this repository?
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+**index.html** the website's initial page, which everything is mercilessly loaded into
 
-- Configure the top-level `parserOptions` property like this:
+**package-lock.json, package.json** json files that give metadata and describe dependencies that this project utilizes
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+**vite.config.ts** used for building the distribution of the website
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+**./src** holds our css/typescript files
+
+**App.tsx** main application file, define the page elements
+
+**index.css** the main css file for this project
+
+**main.tsx** bridge between `App.tsx` and `index.html`
+
+i will also be adding more components to **./src/assets** as needed...
+
+thanks for reading, enjoy

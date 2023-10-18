@@ -9,8 +9,34 @@ import { useState } from 'react'
 // import logos
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import githubIcon from './assets/githubIcon.png'
 // attach css (duplicate statement, also attached in main.tsx)
 import './index.css'
+
+
+// create new function for displaying Icons
+function Icons()
+{
+  return (
+    <>
+      <div className="funky">
+        <a href="https://github.com/yelir4/">
+          <img src={githubIcon} className="icon" />
+          </a>
+          check out the documentation at my github!
+      </div>
+      <br />
+      <div className="funky">
+      <a href="https://www.linkedin.com/in/rileyguioguio/">
+        <img src={githubIcon} className="icon" />
+        </a>
+        visit my linkedin!
+      </div>
+    </>
+  );
+}
+
+
 
 // default export of this module is `App()` which gets rendered in `index.html`
 export default function App() {
@@ -19,34 +45,42 @@ export default function App() {
   // this whole thing is the div id="root"
   return (
     <>
-      {/* textBox for now holds everything with a 10% margin-left */}
-      <div id="textBox">
-        {/* push the content down a little bit */}
-        <br /><br />
-        {/* this is the div with the logos innit */}
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      {/* textBox holds the text content, with 8% `margin-left` */}
+      <div id="textBox">        
         <br />
+        {/* picture goes here */}
+        <img src={viteLogo} width="100px" />
         <p>Riley Guioguio</p>
 
-        {/* header thingy */}
-        <p>Hello, and welcome to my portfolio website!</p>
-        <div>
-          {/* arrow function: calls setCount with the parameters when clicked */}
-          <button className="funky"onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </button>
-          <p>
-            Hello <code>world</code>, welcome to my portfolio
-          </p>
-          <p className="funky">
-            another text element<br/>with a break
-          </p>
+        {/* introduction */}
+        <p>
+          Hello, and welcome to my website portfolio!
+          <br/>My name is Riley and I'm a junior at Santa Clara University.
+          <br/>This is still a work in progress...
+        </p>
+
+        {/* arrow function: calls setCount with the parameters when clicked */}
+        <button className="funky" onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <br />
+        
+        {/* projects section */}
+        <h3>projects</h3>
+        <div className="funky">        
+        <a href="https://vitejs.dev" target="_blank">
+        <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo" alt="React logo" />
+        </a>
+        I built this website portfolio with react.js + vite,
+        <br></br>incorporating elements of html, javascript (typescript), and css<br/>
         </div>
+        <br />
+        <Icons />
+
+        <br /><h5>thanks for stopping by...</h5>
       </div>
       <div id="demos">
         <br /><br />

@@ -2,6 +2,8 @@
 body
 {
   margin: 0;
+  line-height: 1;
+  text-wrap: pretty;
 }
 
 /*
@@ -11,10 +13,10 @@ body
 */
 :root
 {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Trebuchet MS', 'Verdana', 'Segoe UI', sans-serif;
   color: rgba(12, 12, 12, 0.87); /* color the element's text */
   margin: 0;
-  background-color: #b0b0cb;
+  background-color: #cbb0cb;
 }
 
 /*
@@ -24,12 +26,12 @@ body
 #textBox
 {
   margin-left: 6%;
-  background-color: #e0e0f0;
-  /* height: 500px; */
+  background-color: #d4d4f0;
   width: 60%;
   float: left;
   height: 100%;
-  /* min-height: 100vh; */
+  min-height: 100vh;
+  border: 2px solid transparent;
 }
 
 /*
@@ -39,12 +41,17 @@ body
 */
 #demos
 {
-  background-color: #68aec8;
+  background-color: #9abdcf;
   margin-left: 8%; /*so it doesnt bleed to the left for some reason*/
   height: 100%;
-  /* min-height: 100vh; */
+  min-height: 100vh;  
 }
 
+.icon
+{
+  width: 36px;
+  border-radius: 18px;
+}
 /* for links */
 /* a {
   font-weight: 500;
@@ -59,9 +66,10 @@ body
 
 .funky
 {
-  background-color: #999999;
-  line-height: .8;
-  border: 2px solid #eecc88;
+  color: #a09090;
+  line-height: .9;
+  font-size: 14px;
+  font-style: oblique;
 }
 
 h1 {
