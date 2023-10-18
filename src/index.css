@@ -1,0 +1,103 @@
+/* fix the body margins */
+body
+{
+  margin: 0;
+}
+
+/*
+  define for the root id (in index.html)
+  `root` being the rendered app
+  `root` lives in `body` but covers the whole page (so we can render on the whole page)
+*/
+:root
+{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgba(12, 12, 12, 0.87); /* color the element's text */
+  margin: 0;
+  background-color: #b0b0cb;
+}
+
+/*
+  hold everything
+  we make this a `id` because we only want one textBox
+*/
+#textBox
+{
+  margin-left: 6%;
+  background-color: #e0e0f0;
+  /* height: 500px; */
+  width: 60%;
+  float: left;
+  height: 100%;
+  /* min-height: 100vh; */
+}
+
+/*
+  for the demos of our portfolio
+  https://www.educative.io/answers/how-to-make-side-by-side-divs-in-html
+  relies on textbox floating to the left
+*/
+#demos
+{
+  background-color: #68aec8;
+  margin-left: 8%; /*so it doesnt bleed to the left for some reason*/
+  height: 100%;
+  /* min-height: 100vh; */
+}
+
+/* for links */
+/* a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+} */
+
+/* links being hovered */
+/* a:hover {
+  color: #535bf2;
+} */
+
+.funky
+{
+  background-color: #999999;
+  line-height: .8;
+  border: 2px solid #eecc88;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* 
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
