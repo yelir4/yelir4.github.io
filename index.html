@@ -1,36 +1,25 @@
 <!--
-  index.html of our app
-  calls the original parts of our app
-
-  <!DOCTYPE html>   declares this document as an html5 type file
+  `index.html` entry point of the website
 -->
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <!-- set the icon to favicon.ico in our directory -->
-    <link rel="icon" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio - riley guioguio</title>
-    <script type="module" crossorigin src="/assets/index-b2774492.js"></script>
-    <link rel="stylesheet" href="/assets/index-9459b938.css">
+    <meta charset="UTF-8" />
+    <!-- set website icon -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- website title -->
+    <title>riley portfolio wip</title>
+    <script type="module" crossorigin src="/assets/index-cf57a433.js"></script>
+    <link rel="stylesheet" href="/assets/index-2a2a1d66.css">
   </head>
   <body>
-    <!--
-      within the body is the div with id="app"
-      everything is rendered within this div
 
-      note that we cannot have multiple `divs` or anything with the same `id`
-      so there is only one id="app"
-    -->
-    <!-- holy moly -->
-    <div id="app"></div>
+    <!-- the `root` div which displays contents of App.tsx -->
+    <div id="root"></div>
 
-
-    <!--
-      call for `main.js` here which in turn calls for `App.vue`
-      type="module" instead of ="text/javascript" for a reason im sure i someday will understand  
-    -->
+    <!-- attach main.tsx -->
     
   </body>
 </html>
