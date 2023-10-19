@@ -25,13 +25,16 @@ body
 */
 #textBox
 {
+  /* make it so the padding doesnt fatten the div */
+  box-sizing: border-box;
   margin-left: 6%;
   background-color: #d4d4f0;
   width: 60%;
   float: left;
   height: 100%;
   min-height: 100vh;
-  border: 2px solid transparent;
+  /* padding - keep content from hugging the edges */
+  padding-left: .5em;
 }
 
 /*
@@ -41,40 +44,87 @@ body
 */
 #demos
 {
+  box-sizing: border-box;
   background-color: #9abdcf;
-  margin-left: 8%; /*so it doesnt bleed to the left for some reason*/
+  /* keep demos from bleeding onto the left side */
+  margin-left: 66%;
+  /* float: left; */
   height: 100%;
-  min-height: 100vh;  
+  min-height: 100vh;
+  /* padding - keep content from hugging the edges */
+  padding-left: .5em;
+}
+
+/* links at bottom */
+.funky
+{
+  /* text-align: center; */
+  height: 44px;
+  border-radius: 22px;
+  width: 40%;
+  background-color: #b59585;
+  color: #323232;
+  font-size: 14px;
+  font-style: oblique;
+  overflow: hidden; /* hide any text overflowing within */
 }
 
 .icon
 {
   width: 36px;
   border-radius: 18px;
+  align-self: left;
+  margin: 4px 0px 4px 4px;
+  float: left;
 }
-/* for links */
-/* a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-} */
 
-/* links being hovered */
-/* a:hover {
-  color: #535bf2;
-} */
-
-.funky
+/* text in the icons */
+.iconText
 {
-  color: #a09090;
-  line-height: .9;
-  font-size: 14px;
-  font-style: oblique;
+  /* background-color: #000000; */
+  margin-left: 50px;
+  /* margin: 12px 0px 22px 50px; */
+  height: 100%;
+  width: fit-content;
+  /* padding: 50% 0%; */
+  line-height: 44px;
 }
 
-h1 {
+.icon2
+{
+  margin: 4px 4px 4px 0px;
+  width: 36px;
+  border-radius: 18px;
+  align-self: left;
+  float: left;
+}
+
+.icon2Text
+{
+  /* margin-top: 22px; */
+  /* background-color: #000000; */
+  margin-left: 50px;
+  height: 100%;
+  line-height: 22px;
+}
+
+h1
+{
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+/* links */
+a
+{
+  color: inherit;
+  text-decoration: dotted;
+}
+
+/* hovering over links */
+a:hover
+{
+  color: #324284;
 }
 
 button {
@@ -91,6 +141,7 @@ button {
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;

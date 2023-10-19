@@ -19,18 +19,37 @@ function Icons()
 {
   return (
     <>
+      <div className="funky">        
+        <a href="https://vitejs.dev" className="icon">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" className="icon2">
+          <img src={reactLogo} className="logo" alt="React logo" />
+        </a>
+        <div className="icon2Text">
+          I built this website portfolio with react.js + vite,
+          with elements of html, javascript (typescript), and css
+        </div>
+      </div>
+      <br />
+
       <div className="funky">
         <a href="https://github.com/yelir4/">
           <img src={githubIcon} className="icon" />
-          </a>
-          check out the documentation at my github!
+          <div className="iconText">
+            check out the documentation at my github!
+          </div>
+        </a>
       </div>
       <br />
+
       <div className="funky">
       <a href="https://www.linkedin.com/in/rileyguioguio/">
         <img src={githubIcon} className="icon" />
+        <div className="iconText">
+          visit my linkedin!
+        </div>
         </a>
-        visit my linkedin!
       </div>
     </>
   );
@@ -40,8 +59,6 @@ function Icons()
 
 // default export of this module is `App()` which gets rendered in `index.html`
 export default function App() {
-  const [count, setCount] = useState(0);
-
   // this whole thing is the div id="root"
   return (
     <>
@@ -58,33 +75,18 @@ export default function App() {
           <br/>My name is Riley and I'm a junior at Santa Clara University.
           <br/>This is still a work in progress...
         </p>
-
-        {/* arrow function: calls setCount with the parameters when clicked */}
-        <button className="funky" onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
         <br />
         
         {/* projects section */}
         <h3>projects</h3>
-        <div className="funky">        
-        <a href="https://vitejs.dev" target="_blank">
-        <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo" alt="React logo" />
-        </a>
-        I built this website portfolio with react.js + vite,
-        <br></br>incorporating elements of html, javascript (typescript), and css<br/>
-        </div>
-        <br />
         <Icons />
-
-        <br /><h5>thanks for stopping by...</h5>
+        <br />
+        
+        <h5>thanks for stopping by...</h5>
       </div>
       <div id="demos">
         <br /><br />
-        hello guys
+        hello all
       </div>
     </>
   );
