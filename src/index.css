@@ -34,7 +34,7 @@ body
   height: 100%;
   min-height: 100vh;
   /* padding - keep content from hugging the edges */
-  padding-left: .5em;
+  padding-left: .2em;
 }
 
 /*
@@ -52,7 +52,7 @@ body
   height: 100%;
   min-height: 100vh;
   /* padding - keep content from hugging the edges */
-  padding-left: .5em;
+  padding-left: .2em;
 }
 
 /* links at bottom */
@@ -61,7 +61,7 @@ body
   /* text-align: center; */
   height: 44px;
   border-radius: 22px;
-  width: 40%;
+  width: 80%;
   background-color: #b59585;
   color: #323232;
   font-size: 14px;
@@ -147,16 +147,34 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-/* 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
+
+
+
+/* for demo 1 */
+#demo1
+{
+  background-color: #999999;
+  width: 200px;
+  height: 200px;
+  border: 3px solid #323243; /*as of right now this fattens the div*/
+}
+
+.square
+{
+  box-sizing: border-box;
+  width: 25%;
+  height: 25%;
+  float: left;
+  background-color: #ececec;
+  border: 3px solid #323243;
+}
+
+.red
+{
+  background-color: #dc7878;
+}
+
+.yellow
+{
+  background-color: #dcbf78;
+}

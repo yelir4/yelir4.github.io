@@ -13,6 +13,9 @@ import githubIcon from './assets/githubIcon.png'
 // attach css (duplicate statement, also attached in main.tsx)
 import './index.css'
 
+// import our first square demo
+import Demo1 from './Demo1.tsx'
+
 
 // create new function for displaying Icons
 function Icons()
@@ -76,6 +79,42 @@ export default function App() {
           <br/>This is still a work in progress...
         </p>
         <br />
+
+        <h3>relevant coursework</h3>
+        <p>
+          C
+          <li>Abstract Data Types and Data Structures (CSEN 12)</li>
+          <li>Computer Networks (CSEN 146)</li>
+          <li>Operating Systems (CSEN 177)</li>
+        </p>
+
+        <p>
+        C++
+        <li>Object-Oriented Programming and Advanced Data Structures (CSEN 79)</li>
+        </p>
+
+        <p>
+        Java
+        <li>AP Computer Science A</li>
+        <li>Object-Oriented Analysis, Design, Programming (CSEN 160)</li>
+        </p>
+
+        <p>
+        Python
+        <li>Machine Learning and Data Mining (CSEN 140)</li>
+        <li>Computer Networks (CSEN 146)</li>
+        </p>
+
+        <p>
+        ARM Assmebly
+        <li>Intro to Embedded Systems (CSEN 20)</li>
+        </p>
+
+        <p>
+        Circuitry
+        <li>Electric Circuits (ELEN 50)</li>
+        <li>Digital Integrated Circuit Design (ELEN 153)</li>
+        </p>
         
         {/* projects section */}
         <h3>projects</h3>
@@ -87,6 +126,8 @@ export default function App() {
       <div id="demos">
         <br /><br />
         hello all
+
+        <Demo1 />
       </div>
     </>
   );
