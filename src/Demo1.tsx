@@ -4,7 +4,7 @@
 import { useState } from "react";
 
 // `Square` function returns individual square element
-function Square ({ color, onEnter, onLeave })
+function Square ({ color, onEnter, onLeave }: any)
 {
     // function handleMouseLeave()
     // {
@@ -41,7 +41,7 @@ export default function Demo1()
     }
 
     // handle when the mouse enters a square
-    function enter(i)
+    function enter(i : any)
     {
         console.log("entered square".concat(i));
         nextSquares[i] = "square red";
@@ -51,7 +51,7 @@ export default function Demo1()
     // handle when mouse leaves the square
     // NOTE: `leave(i)` IS CALLED AND FINISHED TO COMPLETION BEFORE `enter(i)` IS CALLED
     // SO WE CAN COMPLETE THIS UPDATE FIRST
-    function leave(i)
+    function leave(i : any)
     {
         console.log("left square".concat(i));
         nextSquares[i] = "square yellow";
