@@ -2,21 +2,169 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Riley Guioguio's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <h1>Riley Guioguio</h1>
+    <main>
+        <header>
+            <h1>Riley Guioguio</h1>
+            <h3>rileyagon@gmail.com | <a href="http://linkedin.com/in/rileyguioguio">linkedin</a> | <a href="http://github.com/yelir4">github</a></h3>
+        </header>
 
-    <h2>Experience</h2>
-    <h3>Codelympics: An Educational Game</h3>
-    <h3>SwingBeats</h3>
-    <h3>SwingBeats</h3>
-    <h3>SwingBeats</h3>
-    <h3>SwingBeats</h3>
-    <h3>SwingBeats</h3>
+        <section>
+            <p id="intro">I'm actively seeking a position in software development. I'm interested in creating software that impacts others, and would love to work in industries like defense or SaaS. I have fullstack development experience, and I greatly enjoy working on both frontend and backend of projects. My frontend expertise includes web technologies like <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>. I am also proficient with backend technologies including <b>Node.js</b>, <b>Python</b>, and <b>PHP</b>. Thank you for visiting my portfolio. I look forward to connecting! <b>-Riley</b></p>
+
+            <figure>
+                <img id="dp" src="images/dp.jpg">
+            </figure>
+        </section>
+
+        <h2>Professional Experience</h2>
+
+        <section>
+            <aside>
+                <article>
+                    <h3>SwingBeats</h3>
+                    <p><b>February 2024 — January 2025</b></p>
+                    <p>HTML | CSS | JavaScript | Python | SQLite | Django | CPanel</p>
+                </article>
+
+                <ul>
+                    <li>I joined this campus startup as a Web Developer. I followed our Graphic Designer's input to create responsive, interactive webpages using <b>HTML/CSS/JavaScript</b>.</li>
+                    <li>Over time I gained responsibilities, including administering the webserver and working with interdisciplinary teams to connect hardware to our server's backend.</li>
+                    <li>Utilized <b>cPanel</b> to create URL based routing, <b>RESTful API</b> endpoints, and a <b>PHP</b> mailer.</li>
+                    <li>Managed <b>SQLite</b> databases and ensured 99.9% server uptime.</li>
+                </ul>
+
+                <p><a href="https://swingbeats.net">company website</a></p>
+            </aside>
+
+            <figure>
+                <img src="images/swingbeats.png">
+            </figure>
+        </section>
+
+        <h2>Projects</h2>
+
+        <section>
+            <aside>
+                <article>
+                    <h3>Codelympics: An Educational Game</h3>
+                    <p><b>September 2024 — May 2025</b></p>
+                    <p>Unity | C# | JSON | UML</p>
+                </article>
+
+                <ul>
+                    <li>Codelympics is a videogame that teaches programming concepts to young students.</li>
+                    <li>Development followed the typical software life cycle, from research to writing usecases and user stories. We created <b>UML diagrams</b> to determine our project architecture.
+                    <li>We built Codelympics using the <b>Unity Editor</b>, 2D/3D rendering pipeline, and custom assets.</li>
+                    <li>I created the <i>Synchronized Swimming</i> minigame, which uses code blocks to teach users about functions, variables, conditionals, and loops. The level scripts were written in <b>C#</b>, along with a robust save manager which reads and writes <b>JSON</b> data to the filesystem to preserve user progress.</li>
+                    <li>We performed real-world testing at a local community center, gathering feedback from 4 middle school students. We also presented Codelympics to a panel of engineers at Santa Clara's Senior Engineering Design Conference.</li>
+                </ul>
+
+                <p><a href="https://drive.google.com/drive/folders/1luTo1vRCFTXTmYH2aiPWYdUnMDW3ryOs?usp=sharing">final build</a> | <a href="https://scholarcommons.scu.edu/cseng_senior/316/">thesis</a> | <a href="https://youtu.be/KBgFrna4NQc">video demo</a></p>
+            </aside>
+
+            <figure>
+                <iframe width="80%" src="https://www.youtube.com/embed/KBgFrna4NQc?si=Xis7MzVMtijAfKlr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </figure>
+        </section>
+
+        <section>
+            <aside>
+                <article>
+                    <h3>Gold Mine</h3>
+                    <p><b>November — December 2024</b></p>
+                    <p>HTML | CSS | JavaScript | Node.js | SQLite</p>
+                </article>
+
+                <ul>
+                    <li>Created fullstack web application to create an MMO-like experience.</li>
+                    <li>Used <b>Node.js Express</b> to authenticate user sessions and manage account creation and login.</li>
+                    <li>Wrote <b>SQLite</b> queries to populate webpages with player and shop information.</li>
+                    <li>Integrated <b>Bcrypt</b> to generate password hashes, maintaining server security.</li>
+                </ul>
+
+                <p><a href="http://github.com/yelir4/o107_finalproject">github repo</a></p>
+            </aside>
+
+            <figure>
+                <!-- <iframe width="80%" src="https://www.youtube.com/embed/KBgFrna4NQc?si=Xis7MzVMtijAfKlr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+            </figure>
+        </section>
+
+        <section>
+            <aside>
+                <article>
+                    <h3>Riichi Mahjong</h3>
+                    <p><b>July — October 2024</b></p>
+                    <p>HTML | CSS | JavaScript | PHP | MySQL | JSON</p>
+                </article>
+
+                <ul>
+                    <li>Developed full-stack web application allowing up to four users to play Riichi Mahjong in real-time.</li>
+                    <li>Constructed responsive and user-friendly interface using <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>.</li>
+                    <li>Integrated <b>Fetch API</b> and polling techniques to manage real-time communication between frontend and backend.</li>
+                    <li>Leveraged <b>PHP</b> and <b>MySQL</b> in backend for server-side logic and database management.</li>
+                </ul>
+
+                <p><a href="https://youtu.be/CZuZhDZV8oo">video demo</a> | <a href="https://github.com/yelir4/mahjongbyyelir">github repo</a></p>
+            </aside>
+
+            <figure>
+                <iframe width="80%" src="https://www.youtube.com/embed/CZuZhDZV8oo?si=GCVnNQDd_1xDUUux" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </figure>
+        </section>
+
+        <section>
+            <aside>
+                <article>
+                    <h3>LetsCollab</h3>
+                    <p><b>Jan — March 2024</b></p>
+                    <p>HTML | CSS | JavaScript | Node.js | Google OAuth</p>
+                </article>
+
+                <ul>
+                    <li>Collaborated with peers over 10-week Agile development setting to develop a platform enabling students to form project groups.</li>
+                    <li>Utilized <b>Node.js</b> runtime environment to facilitate seamless connection between web frontend and backend.</li>
+                    <li>Connected students seeking group collaboration by intelligently matching them based on needed skills.</li>
+                    <li>Developed scalable interface using <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b> to streamline project discovery.</li>
+                </ul>
+
+                <p><a href="https://youtu.be/AiDIyQP5IU8">video demo</a> | <a href="https://github.com/CSEN-SCU/csen-174-w24-project-letscollab">github repo</a></p>
+            </aside>
+
+            <figure>
+                <iframe width="80%" src="https://www.youtube.com/embed/AiDIyQP5IU8?si=JTeQwoQMGg6Kdemm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </figure>
+        </section>
+
+        <section>
+            <aside>
+                <article>
+                    <h3>Sequencer</h3>
+                    <p><b>September — December 2023</b></p>
+                    <p>Java</p>
+                </article>
+
+                <ul>
+                    <li>Developed music sequencer application which plays sounds and allows users to create tracks.</li>
+                    <li>Constructed user interface from the ground up with <b>Java Swing</b>.</li>
+                    <li>Implemented advanced programming principles such as multithreading for parallel audio streams and data structures to provide save/load functionality.</li>
+                </ul>
+
+                <p><a href="https://github.com/shreyastherag/sequencer">github repo</a></p>
+            </aside>
+
+            <figure>
+            </figure>
+        </section>
+    </main>
 </body>
 
 </html>
